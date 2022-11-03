@@ -1,0 +1,33 @@
+div#a{
+    position: float;
+    float: left;
+    padding-top: 1em;
+    padding-left: 2em;
+    background: blue;
+    width: 2em;
+    height: 4em;
+}
+div#b{
+    position: float;
+    float: right;
+    background: red;
+    width: 4em;
+    height: 2em;
+}
+div#c{
+    position: float;
+    float: right;
+    padding-top: 1em;
+    padding-left: 2em;
+    background: pink;
+    width: 1em;
+    height: 1em;
+}
+
+p{
+    clear: both;
+    font-size: 80px;
+    background: yellow;
+    margin: 0;
+    padding: 0;
+}

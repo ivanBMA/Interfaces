@@ -1,0 +1,22 @@
+#a{
+    background: blue;
+    width: 2em;
+    height: 4em;
+}
+#b{
+    background: red;
+    width: 4em;
+    height: 2em;
+}
+#c{
+    background: pink;
+    width: 1em;
+    height: 1em;
+}
+
+p{
+    font-size: 80px;
+    background: yellow;
+    margin: 0;
+    padding: 0;
+}
