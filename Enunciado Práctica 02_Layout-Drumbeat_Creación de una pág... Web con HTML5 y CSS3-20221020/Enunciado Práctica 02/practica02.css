@@ -1,4 +1,3 @@
-
 body{
     margin: auto;
     padding: auto;
@@ -55,7 +54,7 @@ header img{
 }
 #PrimerLi{
     border-radius: 5px;
-    margin-left: 64px;
+    margin-left: -10px;
     font-size: 26px;
 }
 #RestoLi {
@@ -63,7 +62,13 @@ header img{
     border-radius: 5px;
     margin-left: 6px;
 }
-
+a{
+    color: rgb(156, 150, 150);
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
 #navegacionSec{
     height: 46px;
     width: 730px;
