@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+
+    <header></header>
+    
+    <audio controls="controls" preload="auto" >
+        <source src="FortunateSong.mp3" type="audio/mpeg" />
+        <source src="FortunateSong.ogg" type="audio/ogg" />
+        El navegador NO soporta el audio
+    </audio>
+
+    <audio id="player" src="FortunateSong.mp3"></audio>
+    <div>
+        <button onclick="document.getElementById('player').play()">Play</button><button
+        onclick="document.getElementById('player').pause()">Pausa</button><button onclick="document.getElementById('player').volume+=0.1">+ Volumen</button>
+        <button onclick="document.getElementById('player').volume-=0.1">-Volumen</button>
+    </div>
+
+    <h1>Este no esta en mi pc</h1>
+
+    <iframe width="496" height="360" 
+        src="https://www.youtube.com/embed/N7Pp5je0C_8" 
+        title="이빨에 낀 만화" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <h1>Este esta en mi pc</h1>
+
+    <video controls="" width="360" height="240">
+        <source src="video.mp4" type="video/mp4"><!-- Safari 5 -->
+        <source src="video.mp4" type="video/ogg; codecs='theora, vorbis'"><!-- Firefox 5 y Chrome 14 --><source src="videos/recetapollo.webm" type="video/webm"><!-- Firefox 5 y Google Chrome 14 -->
+        <object type="application/x-shockwave-flash" data="player_flv_maxi.swf" height="240" width="360">
+        <param name="movie" value="player_flv_maxi.swf">
+        <param name="FlashVars" value="flv=videos/recetapollo.flv">
+        <embed type="application/x-shockwave-flash" width="360" height="240" src="player_flv_maxi.swf"
+        flashvars="flv=videos/recetapollo.flv">
+        </embed>
+        </object>
+    </video>
+
+    <footer></footer>
+
+</body>
+</html>
