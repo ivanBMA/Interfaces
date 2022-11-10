@@ -1,6 +1,12 @@
 *{
     margin: auto;
 }
+
+@font-face{
+      font-family: PTSans-Italic;
+      src: url("fonts/PT_Sans/PTSans-Italic.ttf") format("truetype");
+}
+
 body{
     margin: auto;
     padding: auto;
@@ -26,6 +32,7 @@ header img{
     float: left;
     font-size: 40px;
     font-weight:bold;
+    font-family:PTSans-Italic;
 }
 #subtitulo p {
     margin-top: 0px;
@@ -34,6 +41,7 @@ header img{
     margin-top: 40px;
     float: right;
     width: 540px;
+    font-family: Mr;
 }
 #inputIzquierda{
     float: right;
@@ -73,21 +81,18 @@ a{
 a:hover{
     color: black;
 }
-#navegacionSec{
+
+#nav2{
     height: 46px;
     width: 730px;
     float: left;
     color: white;
     border-bottom: 2px solid black;
-}
-
-#nav2{
-    float: left;
-    width: 100%;
+    font-family:PTSans-Italic;
 }
 #nav2 ul {
     padding-left: 0px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 .navSecuncun{
     margin-left: 0vh;
@@ -100,14 +105,25 @@ a:hover{
     width: 20vh;
     font-weight:  bolder;
 }
+#flechaGris{
+    position: absolute;
+    margin-left: 92px;
+    margin-top: 9.2px;
+}
 
 #SeleccionaIdioma{
+    font-family:PTSans-Italic;
     font-size: 20px;
     height: 46px;
     width: 450px;
     float: left;
     background-color: white;
     border-bottom: 2px solid black;
+    
+}
+#SeleccionaIdioma input{
+    font-family:PTSans-Italic;
+    margin-top: 10px;
 }
 #SeleccionaIdioma p{
     margin-left: 240px;
@@ -183,6 +199,7 @@ nav li:hover{
     
 }
 #textArticulo{
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 0px;
     float: left;
     text-align: left;
@@ -210,6 +227,7 @@ nav li:hover{
     font-weight:  bolder;
 }
 #textArticulo2{
+    font-family: 'Times New Roman', Times, serif;
     float: left;
     text-align: left;
     width: 80%;
@@ -228,6 +246,7 @@ nav li:hover{
 }
 #articulo3 p{
     font-size: 18.2px;
+    font-family: 'Times New Roman', Times, serif;
 }
 #textoAzul{
     color: rgb(8, 137, 137);
@@ -249,6 +268,7 @@ nav li:hover{
     font-size:19px;
     font-weight:normal;
     margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
   }
   #articulo4 ul li{
     margin-left: 13px;
@@ -260,7 +280,14 @@ nav li:hover{
     color: red;
     font-weight:  bolder;
     font-size: 25px;
+    padding-top: 20px;
     margin-bottom: 20px;
+    font-family: PTSans-Italic;
+    margin-left: 20px;
+  }
+  #articulo4 ul li p{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   #articulo4 ul{
@@ -283,7 +310,7 @@ nav li:hover{
     color:#000;
     background:rgb(255, 169, 216);
     display:block;
-    height:160px;
+    height:210px;
     width:280px;
   }
 
@@ -303,6 +330,14 @@ nav li:hover{
   top:-5px;
   background-color: rgb(251, 255, 172);
 }
+#articulo4 ul li:nth-child(4n) a{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background-color: rgb(125, 210, 231);
+  }
 #articulo4 ul li:nth-child(5n) a{
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
@@ -334,6 +369,7 @@ nav li:hover{
 #articulo4pSolitaria{
     margin-left: 20px;
     margin-top: -40px;
+    font-family: 'Times New Roman', Times, serif;
 }
 #subtituloArticulo4{
     margin-left: 20px;
@@ -385,6 +421,7 @@ nav li:hover{
     height: 380px;
     background-color: rgb(199, 194, 194);
     color: white;
+    font-family: PTSans-Italic;
 }
     #Caixeta img{
         padding-top: 13px;
@@ -398,7 +435,6 @@ nav li:hover{
         font-size: 15px;
         width: 75%;
         float: right;
-        font-family:PTSans;
     }
     #Caixeta em{
         font-weight: bold;
@@ -442,6 +478,12 @@ nav li:hover{
     color: rgb(85, 174, 145);
     font-weight: bold;
 }
+#CaixetaWTexto1{
+    font-family: PTSans-Italic;
+}
+#CaixetaWTexto2{
+    font-family: 'Times New Roman', Times, serif;
+}
 #textoNegrita{
     color: rgb(2, 4, 45);
     font-weight: bold;
@@ -457,6 +499,7 @@ nav li:hover{
     height: 20vh;
     color: white;
     background-color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 #IdentiA{
     border-radius: 10px;
@@ -499,6 +542,7 @@ footer{
     text-decoration: none;
     text-align: left;
     height: 150px;
+    font-family: 'Times New Roman', Times, serif;
 }
 footer li{
     margin-top: 5px;
