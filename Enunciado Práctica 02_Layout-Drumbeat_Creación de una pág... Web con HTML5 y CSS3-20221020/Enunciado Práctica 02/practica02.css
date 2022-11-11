@@ -1,31 +1,46 @@
-/*
-La fuente Microsoft Sans serif no se puede poner Por que es depago
-*/
 *{
     margin: auto;
 }
-
+/*La fuente Microsoft Sans serif no se puede poner Por que es depago*/
+/*Aqui pongo em margen automatico para todos los elementos*/
 @font-face{
       font-family: PTSans-Italic;
       src: url("fonts/PT_Sans/PTSans-Italic.ttf") format("truetype");
 }
 
+/*Aqui pongo la anchura de la paguina*/
 body{
-    margin: auto;
-    padding: auto;
     width: 1190px; 
 }
 
+/*En el header 
+    -Pongo pargen arriba para que no choque el elemento con el techo.
+    -Le digo que flote a la izquierda para que el elemento se posicione
+        a la izquierda y ademas que el resto de elemento choquen con el.
+    -Tambien Le asigno la altura y anchura para que encague bien en su posicion
+        con el resto de elementos.
+*/
 header{
     margin-top: 2vh;
     float: left;
     width: 540px;
     height: 100px;
 }
+/* Al header (img) le asigno
+    -anchura
+*/
 header img{
     width: 480px;
 }
 
+/*Al subtitulo le asigno
+    - color del texto a azul..
+    - altura anchura.
+    - tamaño de la letra.
+    - Borde de la letra.
+    - Flote a la izquierda.
+    - La tipografia de la letra.
+*/
 #subtitulo{
 
     color: rgb(22, 156, 214);
@@ -37,18 +52,35 @@ header img{
     font-weight:bold;
     font-family:PTSans-Italic;
 }
-#subtitulo p {
-    margin-top: 0px;
-}
+
+/*Al la navegacionArriba le asigno
+    - anchura.
+    - Flote a la Derecha.
+    - La tipografia de la letra.
+    - Margen superior.
+*/
 #navegacionArriba{
     margin-top: 40px;
     float: right;
     width: 540px;
     font-family: Mr;
 }
+/*A el inputIzquierda le asigno
+    - Flote a la Izquierda.
+*/
 #inputIzquierda{
     float: right;
 }
+/*Al la navegacionArriba(input) le asigno
+    - anchura.
+    - Flote a la izquierda.
+    - La tipografia de la letra.
+    - Alineacion del texto central.
+    - Tamaño del la fuente.
+    - Margen izquierdo.
+    - Color de fondo blanco.
+    - Borde nulo.
+*/
 #navegacionArriba input{
     float: left;
     width: 60px;
@@ -67,24 +99,51 @@ header img{
 #nav1 ul {
     padding-left: 100px;
 }
+
+/*Al PrimerLi le asigno(Es el primer li del nav 1)
+    - redondeo de los bordes.
+    - Tamaño del la fuente.
+    - margen a la izquierda.
+*/
 #PrimerLi{
     border-radius: 5px;
     margin-left: -100px;
     font-size: 33px;
 }
-#RestoLi {
+/*Al RestoLi le asigno(Es el resto de li del nav 1)
+    - redondeo de los bordes.
+    - Tamaño del la fuente.
+    - margen a la izquierda.
+*/
+.RestoLi{
     font-size: 33px;
     border-radius: 5px;
     margin-left: 6px;
 }
+/*Al a de nav1 le asigno
+    - Color del texto en gris.
+    - Descoracion del texto ninguna.
+*/
 a{
     color: rgb(156, 150, 150);
     text-decoration: none;
 }
+/*Al a:hover de nav1 le asigno
+    - Cuando pasas el ratón por encima el color del texto se cambia
+        a negro.
+*/
 a:hover{
     color: black;
 }
 
+/*Al nav2 le asigno
+    - Altura
+    - Anchura
+    - Flote a la izquierda
+    - Color del texto blanco
+    - Borde de color negro con una anchura especifica
+    - La tipografia del texto
+*/
 #nav2{
     height: 46px;
     width: 730px;
@@ -97,6 +156,18 @@ a:hover{
     padding-left: 0px;
     margin-top: 18px;
 }
+/*Al nav2 le asigno
+    - Altura.
+    - Anchura.
+    - Color del fondo Blanco.
+    - Color del texto Gris.
+    - Anchura del texto.
+    - El margen a la izquierda de 0.
+    - La tipografia del texto.
+    - redondeado del borde la parte superior izquierda y derecha.
+    - Disposicion en linea de los elementos.
+    - El ancho del los elementos.
+*/
 .navSecuncun{
     margin-left: 0vh;
     display: inline;
@@ -108,12 +179,27 @@ a:hover{
     width: 20vh;
     font-weight:  bolder;
 }
+
+/*A la flechaGris le asigno
+    - Posicion absoluta para que se ponga encima de todos los elementos.
+    - Para asignar el eje y uso el margen de altura
+    - Para asignar el eje x uso el margen a la izquierda
+*/
 #flechaGris{
     position: absolute;
     margin-left: 92px;
     margin-top: 9.2px;
 }
 
+/*Al SeleccionaIdioma le asigno
+    - Tipografia del texto.
+    - Alura, Anchura.
+    - Flote a la izquierda.
+    - Color de fondo blanco.
+    - Color de borde negro y una anchura.
+    - Tamaño del texto
+
+*/
 #SeleccionaIdioma{
     font-family:PTSans-Italic;
     font-size: 20px;
@@ -137,6 +223,11 @@ a:hover{
 #SeleccionaIdioma input{
     font-size: 20px;
 }
+/*Al SeleccionaIdioma input:(hover) le asigno
+    - Cuando pasas el raton por encima el borde se cambia de color
+        a gris.
+
+*/
 #SeleccionaIdioma input:hover{
     border: grey solid;
 }
@@ -160,12 +251,6 @@ a:hover{
     border-bottom-right-radius: 10px;
     border: none;
 }
-
-nav{ 
-    float: right;
-    width: 50%;
-}
-
 
 
 nav li{
@@ -201,7 +286,7 @@ nav li:hover{
     font-weight:  bolder;
     
 }
-#textArticulo{
+.textArticulo{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0px;
     float: left;
@@ -251,7 +336,7 @@ nav li:hover{
     font-size: 18.2px;
     font-family: 'Times New Roman', Times, serif;
 }
-#textoAzul{
+.textoAzul{
     color: rgb(8, 137, 137);
     font-weight:bolder;
 }
@@ -369,7 +454,7 @@ nav li:hover{
     color:#fff;
 }
 
-#articulo4pSolitaria{
+.articulo4pSolitaria{
     margin-left: 20px;
     margin-top: -40px;
     font-family: 'Times New Roman', Times, serif;
@@ -481,7 +566,7 @@ nav li:hover{
     color: rgb(85, 174, 145);
     font-weight: bold;
 }
-#CaixetaWTexto1{
+.CaixetaWTexto1{
     font-family: PTSans-Italic;
 }
 #CaixetaWTexto2{
