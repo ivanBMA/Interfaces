@@ -152,11 +152,17 @@ a:hover{
     border-bottom: 2px solid black;
     font-family:PTSans-Italic;
 }
+
+/*
+Al nav2 ul le asigno
+    - Margin izquierda
+    - Margin arriba
+*/
 #nav2 ul {
     padding-left: 0px;
     margin-top: 18px;
 }
-/*Al nav2 le asigno
+/*Al navSecuncun le asigno
     - Altura.
     - Anchura.
     - Color del fondo Blanco.
@@ -210,10 +216,24 @@ a:hover{
     border-bottom: 2px solid black;
     
 }
+
+/*
+Al seleccionaIdioma (imput) le asigno
+    - La tipografia.
+    - Margen arriba;
+
+*/
 #SeleccionaIdioma input{
     font-family:PTSans-Italic;
     margin-top: 10px;
 }
+/*
+Al SeleccionarIdioma p
+    - Margen izquierda
+    - Margen arriba
+    - Ancho
+    - flota izquierda
+*/
 #SeleccionaIdioma p{
     margin-left: 240px;
     margin-top: 20px;
@@ -231,7 +251,14 @@ a:hover{
 #SeleccionaIdioma input:hover{
     border: grey solid;
 }
-
+/*
+Al botonEn le asigno
+    - Margen izquierda
+    - Margen arriba
+    - Borde curvo en la parte superior izquierda
+    - Borden curvo en la parte inferior izquierda
+    - Borde nulo ("Para que el resto de inputs se acerquen")
+*/
 #botonEn{
     margin-left: 9px;
     margin-top: 20px;
@@ -239,11 +266,26 @@ a:hover{
     border-bottom-left-radius: 10px;
     border: none;
 }
+
+/*Al botonCa le asigno
+    - Margen a la izquierda
+    - Margen arriba.
+    - Borde nulo ("Para que el resto de inputs se acerquen")
+*/
 #botonCa{
     margin-left: -5px;
     margin-top: 20px;
     border: none;
 }
+
+/*
+Al botonEs le asigno
+    - Margen izquierda
+    - Margen arriba
+    - Borde curvo en la parte superior derecha
+    - Borden curvo en la parte inferior derecha
+    - Borde nulo ("Para que el resto de inputs se acerquen")
+*/
 #botonEs{
     margin-left: -5px;
     margin-top: 20px;
@@ -252,6 +294,15 @@ a:hover{
     border: none;
 }
 
+/*
+al nav li le asigno
+    - Disposicion en linea
+    - margen izquierda
+    - Color del texto gris
+    - Color del fondo gris clariro
+    - margen interior
+
+*/
 
 nav li{
     display: inline;
@@ -260,22 +311,48 @@ nav li{
     color: rgb(109, 105, 105);
     padding: 4px;
 }
+/*
+Al nav li:hover le asigno
+    - Cunado paso el raton por encima el texto se pone en negro
+*/
 
 nav li:hover{
     color: black;
 }
-
+/*
+Al nav2 li:hover le asigno
+    - Cunado paso el raton por encima el texto se pone en negro 
+        y se pone el texto con mayor grosor
+*/
 #nav2 li:hover{
     color: black;
     font-weight:bolder;
 
 }
 
+/*
+Al articulo 1 le asigno
+    - Alutra
+    - Anchura
+    - Flota a la izquierda para que el resto de elementos choquen con el
+*/
+
 #articulo1{
     height: 340px;
     width: 890px;
     float: left;
 }
+
+/*
+al tituloArticulo le asigno
+    - Margen arriba para que no choque con el techo
+    - Flote a la izquierda
+    - Aumento el tamaño de la letra
+    - Cambio el color del texto a azul
+    - Cambio la anchura
+    - Pongo margen abajo para que no choque el titulo con el resto del texto
+    - Aumento el grosor de las letras
+*/
 #tituloArticulo{
     margin-top: 40px;
     float: left;
@@ -286,6 +363,18 @@ nav li:hover{
     font-weight:  bolder;
     
 }
+
+/*
+al textArticulo le asigo("Uso clase por que son variaos elementos")
+    - Cambio la tipografia
+    - Flota a la izquierda
+    - Ancho
+    - Texto alineado a la izquierda
+    - Aumento el tamaño del texto
+    - marger abajo
+    - margen arriba
+
+*/
 .textArticulo{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0px;
@@ -296,24 +385,52 @@ nav li:hover{
     font-size: 18.2px;
     margin-bottom: 40px;
 }
+/*
+al articulo1 (img)
+    - Flota a la izquierda
+    - Pongo margen a la derecha
+    - Le pongo una anchura concreta
+*/
 #articulo1 img{
     float: right;
     margin-right: 2vh;
     width: 20%;
 }
 
+/*
+Al articulo2 le asigno
+    - Un altura especifica
+    - Una Anchura especifica
+    - Flota a la izquierda
+*/
 #articulo2{
     height: 170px;
     width: 435px;
     float: left;
 }
 
+/*
+Al tituloArticulo2 le asigno
+    - Aumento el tamaño del texo
+    - Cambio el color del texto a azul
+    - Anchura especifica
+    - Aumento el grosor del texto
+*/
 #tituloArticulo2{
     font-size: 25px;
     color: rgb(22, 156, 214);
     width: 98%;
     font-weight:  bolder;
 }
+
+/*
+Al texArticulo2 le asigno
+    - Le cambio la tipografia
+    - Flote a la izquierda
+    - Texto alineado a la izquierda
+    - Anchura especifica
+    - Aumento el tamaño del texto
+*/
 #textArticulo2{
     font-family: 'Times New Roman', Times, serif;
     float: left;
@@ -322,48 +439,111 @@ nav li:hover{
     font-size: 18.2px;
 }
 
+/*
+Al articulo3 le asigna
+    - Alutra especifica
+    - Anchura especifica
+    - Flote a la izquierda
+*/
 #articulo3{
     height: 170px;
     width: 435px;
     float: left;
 }
+
+/*
+Al articulo3 (h2) le asigno
+    - Aumento el tamaño de letra
+    - Cambio el color del texto a azul.
+    - Aumento el grosor del texto
+*/
 #articulo3 h2{
     font-size: 25px;
     color: rgb(22, 156, 214);
     font-weight:  bolder;
 }
+/*
+Al articulo3 (p) le asigno
+    - Aumento el tamaño del texto
+    - Cambio la tipografia
+*/
 #articulo3 p{
     font-size: 18.2px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/*
+Al textoAzul le asigno (esta clase es para todos aquellos textos que quiero en azul)
+    - Cambio el color del texto a azul
+    - Aumento el grosor del texto
+*/
 .textoAzul{
     color: rgb(8, 137, 137);
     font-weight:bolder;
 }
 
+/*
+Al articulo4 le asigno
+    - Anchura especifica
+    - Flote a la izquierda
+    - Aumento la funete del texto 
+*/
 #articulo4{
     width: 880px;
     float: left;
     font-size: 18.2px;
 }
+
+/*
+Al articulo4 (h2) le asigno
+    - Cambio el color del texto
+    - Aumento el tamaño del texto
+    - Aumento el grosor del texto
+    - Marger abajo
+
+*/
 #articulo4 h2{
     color: rgb(22, 156, 214);
     font-weight:  bolder;
     font-size: 25px;
     margin-bottom: 20px;
   }
+
+  /*
+  Al articulo4 (p) le asigno
+    - Aumento el tamaño del texto
+    - Marger abajo
+    - cambio la tipografia
+    */
   #articulo4 p{
     font-size:19px;
     font-weight:normal;
     margin-bottom: 50px;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  /*
+  Al ariculo4 ul (li) le asigno
+    - Margen a la izquierda
+    - Margen abajo
+    - Flota a la izquierda
+  */
   #articulo4 ul li{
     margin-left: 13px;
     margin-bottom: 30px;
     float:left;
   }
 
+  /*
+  Al articulo4 ul li (h2) le asigno
+    - Cambio el color del texto a rojo
+    - Aumento el grosor del texto
+    - Cambio la tipografia
+    - Pongo marger abajo
+    - Pongo marge a la izquierda
+    - Aumento el tamaño del texto
+
+  */
   #articulo4 ul li h2{
     color: red;
     font-weight:  bolder;
@@ -373,26 +553,51 @@ nav li:hover{
     font-family: PTSans-Italic;
     margin-left: 20px;
   }
+  /*
+  Al articulo4 ul li (p) le asigno
+    - Margen a la izquierda
+    - Margen a la derecha
+  */
   #articulo4 ul li p{
     margin-left: 20px;
     margin-right: 20px;
   }
 
+  /*
+  Al articulo4 (ul) le asigno
+    - Pongo que los elemento que salen de la caja dejen de verse
+    - Margen a 0
+    - Pading a 0
+  */
   #articulo4 ul{
     overflow:hidden;
     padding:3em;
     margin:0;
     padding:0;
-
   }
+
+  /*
+  Al articulo4 (li) le asigno
+    - Quita los formatos
+    - Margen a la izquierda
+  */
   #articulo4 li{
     list-style:none;
     margin-left: 0px;
     
   }
-  
+
+  /*
+  Al articulo4 ul li (a) le asigno
+    - Borde curvado
+    - quito la decoracion del texto
+    - Cambio el color del texto a negro
+    - Cambio el fondo de color al rosa
+    - Altura especifica
+    - Anchura especifica
+    - Disposicion en bloke
+  */
   #articulo4 ul li a{
-    
     border-radius: 5px;
     text-decoration:none;
     color:#000;
@@ -401,7 +606,7 @@ nav li:hover{
     height:210px;
     width:280px;
   }
-
+/*Cambio los angulos de los postit*/
 #articulo4 ul li:nth-child(even) a{
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
@@ -410,6 +615,7 @@ nav li:hover{
   top:5px;
   background:rgb(187, 255, 166);
 }
+/*Cambio los angulos de los postit*/
 #articulo4 ul li:nth-child(3n) a{
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
@@ -418,6 +624,7 @@ nav li:hover{
   top:-5px;
   background-color: rgb(251, 255, 172);
 }
+/*Cambio los angulos de los postit*/
 #articulo4 ul li:nth-child(4n) a{
     -o-transform:rotate(-3deg);
     -webkit-transform:rotate(-3deg);
@@ -426,6 +633,7 @@ nav li:hover{
     top:-5px;
     background-color: rgb(125, 210, 231);
   }
+/*Cambio los angulos de los postit*/
 #articulo4 ul li:nth-child(5n) a{
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
@@ -433,6 +641,8 @@ nav li:hover{
   position:relative;
   top:-10px;
 }
+
+/*Cuando pasas el raton por encima hace zoom al texo y le pone sombreado de color negro y aumenta el tamaño*/
 #articulo4 ul li a:hover,ul li a:focus{
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -508,7 +718,6 @@ nav li:hover{
     float: right;
     height: 380px;
     background-color: rgb(199, 194, 194);
-    color: white;
     font-family: PTSans-Italic;
 }
     #Caixeta img{
@@ -577,7 +786,18 @@ nav li:hover{
     font-weight: bold;
 }
 
-
+/*
+Al Identi le asigno
+    - Margen arriba
+    - Margen izquierda
+    - Borde redondeado
+    - Anchura especifica
+    - Altura especifica
+    - Flote a la derceha
+    - Cambio el color del texo a blanco
+    - Cambio el color del fondo a blanco
+    - Cambio la tipografia
+*/
 #Identi{
     margin-top: 60px;
     margin-left: 8px;
@@ -589,20 +809,46 @@ nav li:hover{
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+/*
+Al IdentiA le asigno
+    - Borde redondeado
+    - Color de fondo a azul
+    - Anchura especifica
+    - Flota a la izquierda
+*/
 #IdentiA{
     border-radius: 10px;
     background-color: rgb(120, 139, 222);
     width: 100%;
     float: left;
 }
+/*
+Al IdentiA (img) le asigno
+    - Flote a la izquierda
+    - Anchura especifica
+*/
 #IdentiA img{
     float: left;
     width: 20%;
 }
+
+/*Al IdentiA (p)
+    - Flota derecha
+    - Anchura especifica
+*/
 #IdentiA p{
     float: right;
     width: 80%;
 }
+
+/*
+al identiB le asigno
+    - Margen arriba
+    - Anchura especifica
+    - Borde redondeado
+    - Flota a la izquierda
+    - Cambio el color del fondo a azul
+*/
 #IdentiB{
     margin-top: 3%;
     width: 100%;
@@ -610,11 +856,26 @@ nav li:hover{
     background-color: rgb(72, 255, 255);
     float: left;
 }
+
+/*
+Al IdentiB (img) le asigno
+    - Flote a la izquierda
+    - Anchura especifica
+*/
 #IdentiB img{
     float: left;
     width: 15%;
 
 }
+
+/*
+Al identiB (p) le asigno
+    - Flote a la izquierda
+    - Anchura especifica
+    - Texto alineado al centro
+    - Cambio el grosor del text
+    - margen interior a la derecha
+*/
 #IdentiB p{
     float: right;
     width: 80%;
@@ -623,6 +884,16 @@ nav li:hover{
    font-weight: bold;
 }
 
+
+/*
+Al footer le asigno
+    - Cambio el color del fondo a gris
+    - Anchura especifica
+    - Quito decoracion del texto
+    - Texto alineado a la izquierda
+    - Altura especifica
+    - Cambio la tipografia
+*/
 footer{
     background-color: rgb(123, 112, 112);
     width: 1190px;
@@ -632,16 +903,34 @@ footer{
     height: 150px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/*
+Al footer li le asigno
+    - Margen arriba
+*/
 footer li{
     margin-top: 5px;
 }
 
+/*
+Al footer (img) le asigno
+    - flote a la izquierda
+    - Margen a la derecha
+*/
 footer img{
     float: left;
-    margin-right: 15px;}
+    margin-right: 15px;
+}
 
+/*
+Al foot1 le asigno
+    - Margen arriba
+    - flote a la izquierda
+    - Cambiar el color del fondo a gris
+    - Cambiar el color del texto a blanco
+    - Margen a la izquierda
+*/
 #foot1{
-    
     margin-top: 20px;
     float: left;
     background-color: rgb(123, 112, 112);
@@ -650,6 +939,14 @@ footer img{
     margin-left: 70px;
 }
 
+/*
+al foot2 le asigno
+    - Margen arriba
+    - Flote a la izquierda
+    - Cambio el color del fondo a gris
+    - Cambio el color del texto a blanco
+    - Quito los estilos de las listas
+*/
 #foot2{
     margin-top: 20px;
     float: left;
@@ -657,10 +954,24 @@ footer img{
     color: white;
     list-style:none;
 }
+
+/*
+Al f1p le asigno
+    - Margen a la izquieda
+*/
 #f1p{
     padding-left: 80px;
 }
 
+/*
+al foot3 le asigno
+    - Margen izquierda
+    - Margen arriba
+    - Flote a la izquierda
+    - Cambio el color del fondo a gris
+    - Cambio el color del texto a blanco
+    - Cambio el espaciado entre lineas
+*/
 #foot3{
     margin-left: 80px;
     margin-top: 20px;
@@ -670,7 +981,15 @@ footer img{
     list-style:none;
     line-height:12px;
 }
-
+/*
+Al foot4 le asigno
+    - Margen arriba
+    - Flota a la izquierda
+    - Cambio el color del fondo a gris
+    - Cambio el color del texto a blanco
+    - quito el estilo de la lista
+    - Texto alineado a la izquierda
+*/
 #foot4{
     margin-top: 20px;
     float: left;
@@ -680,6 +999,16 @@ footer img{
     text-align: left;
 }
 
+/*
+Al foot5 le asigno
+    - Margen arriba
+    - Flote a la izquierda
+    - Cambio el color de fondo a gris
+    - Cambio el color del texo a negro
+    - Texto alineado a la derecha
+    - Aumento el tamaño del texto
+    - 
+*/
 #foot5{
     margin-top: 20px;
     float: left;
@@ -691,9 +1020,17 @@ footer img{
     font-size:13px;
     text-align: right;
 }
+
+/*
+Al foot5Creative le asigno
+    - Cambio el color a blanco
+*/
 #foot5Creative{
     color: white;
 }
+/*
+Al primerPFoot5 le asigno grosor respecto la altura
+*/
 #primerPFoot5{
     padding-top: 1vh;
 }
