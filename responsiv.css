@@ -1,0 +1,99 @@
+header{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    margin-top: -4vh;
+    background-color: brown;
+}
+nav li{
+    display: inline;
+}
+nav li:hover{
+    background-color: yellow;
+}
+
+article{
+    background-color: rgb(157, 157, 219);
+    float: left;
+    width: 99%;
+    border: 2px red solid;
+    border-radius: 20px ;
+}
+#titulo{
+    float: left;
+    text-align: right;
+    width: 50%;
+    
+    margin-top: -1vh;
+}
+#titulo1{
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: -1vh;
+    
+}
+
+aside{
+    background-color: green;
+    float: left;
+    width: 100%;
+}
+
+footer{
+    background-color: red;
+    width: 100%;
+    float: left;
+}
+
+body{
+	font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;
+	padding:0;
+    padding-top: 2%;
+	margin:0 auto; /* centra la página */
+	width:90%; /* cambiamos el ancho al 90% */
+	line-height:1.75; /* definimos el espacio entre líneas */
+	word-spacing:0.1em /* definimos el espacio entre palabras */
+}
+
+#secundario{
+    margin-top: -4vh;
+	display:flex;
+	/* DIRECCIÓN DE LOS ELEMENTOS visualice en una fila */
+	flex-direction: row; 
+	/* AJUSTAMOS EN EL EJE PRINCIPAL  nowrap, que ajusta los elementos a una línea */
+	flex-wrap:nowrap; 
+	/* ALINEACIÓN DE CONTENIDO
+	space-between, que reparte el espacio entre los elementos dejando los extremos pegados al borde.*/
+	justify-content: space-between; 
+	border: solid 2px black;
+}
+
+@media screen and (max-width: 1000px) {
+	#secundario{
+		display:flex;
+		/* DIRECCIÓN DE LOS ELEMENTOS visualice en una columna */
+		flex-direction: column;
+	}
+
+	section, aside{
+		width: 200px;
+        
+	}
+    section{
+        order:2;
+    }
+    aside{
+        order:1;
+    }
+    
+
+	section:after{
+		/* realizar cálculos https://developer.mozilla.org/es/docs/Web/CSS/calc() */
+		padding-left: calc(100% / 2 - 3px);
+		/* pone contenido despues de visualizar section */
+		
+    }
+}
