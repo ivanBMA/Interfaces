@@ -545,7 +545,7 @@ Al articulo4 (h2) le asigno
 
   */
   #articulo4 ul li h2{
-    color: red;
+    color: rgb(17, 67, 105);
     font-weight:  bolder;
     font-size: 25px;
     padding-top: 20px;
@@ -606,7 +606,7 @@ Al articulo4 (h2) le asigno
     height:210px;
     width:280px;
   }
-/*Cambio los angulos de los postit*/
+/*Cambio los angulos de los postit  y el color*/
 #articulo4 ul li:nth-child(even) a{
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
@@ -615,7 +615,7 @@ Al articulo4 (h2) le asigno
   top:5px;
   background:rgb(187, 255, 166);
 }
-/*Cambio los angulos de los postit*/
+/*Cambio los angulos de los postit y el color*/
 #articulo4 ul li:nth-child(3n) a{
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
@@ -624,7 +624,7 @@ Al articulo4 (h2) le asigno
   top:-5px;
   background-color: rgb(251, 255, 172);
 }
-/*Cambio los angulos de los postit*/
+/*Cambio los angulos de los postit  y el color*/
 #articulo4 ul li:nth-child(4n) a{
     -o-transform:rotate(-3deg);
     -webkit-transform:rotate(-3deg);
@@ -678,7 +678,7 @@ Al articulo4 (h2) le asigno
 
 #CaizetaRe{
     margin-top: 20px;
-    width: 300px;
+    width: 290px;
     float: right;
     height: 124px;
     background-color: rgb(90, 177, 192);
@@ -703,8 +703,8 @@ Al articulo4 (h2) le asigno
         font-size: 30px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 63px;
-        padding-right: 63px;
+        padding-left: 53px;
+        padding-right: 53px;
         margin-top: 20px;
         margin-left: 35px;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -714,7 +714,7 @@ Al articulo4 (h2) le asigno
     margin-top: -180px;
     margin-left: 8px;
     border-radius: 5px;
-    width: 300px;
+    width: 290px;
     float: right;
     height: 380px;
     background-color: rgb(199, 194, 194);
@@ -740,16 +740,23 @@ Al articulo4 (h2) le asigno
 
 #CaixetaW{
     margin-top: 20px;
-    margin-left: 8px;
+    margin-left: 18px;
     border-radius: 5px;
-    width: 300px;
+    width: 290px;
     float: right;
     height: 550px;
     float: left;
     background-color: rgb(251, 255, 172);
     color: black;
 }
-
+/*
+al CaixetaW h2 em le asigno
+    - cambio el color del texto
+    - cambio la tipografica
+    - margen arriba
+    - margen izquierda
+    - margen abajo
+*/
 #CaixetaW h2{
     color: rgb(141, 35, 35);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -757,30 +764,60 @@ Al articulo4 (h2) le asigno
     margin-top: 16px;
     margin-bottom: 20px;
 }
+/*
+al CaixetaW img em le asigno
+    - anchura especifica
+    - flote a la izquierda
+    - margen superior
+    - margen izquierda
+*/
 #CaixetaW img{
-    
     width: 10%;
     float: left;
     margin-left: 16px;
     margin-top: 1px;
-    
 }
+/*
+al CaixetaW p em le asigno
+    - anchura especifica
+    - flote a la derecha
+    - texto alineado a la izquierda
+    - margen superior
+*/
 #CaixetaW p{
     margin-top: 10px;
     text-align: left;
     width: 80%;
     float: right;
 }
+/*
+al CaixetaW em le asigno
+    - cambio la tipografia
+    - Cambio el color del texo
+*/
 #CaixetaW em{
     color: rgb(85, 174, 145);
     font-weight: bold;
 }
+/*
+al CaixetaWTexto1 le asigno
+    - cambio la tipografia
+*/
 .CaixetaWTexto1{
     font-family: PTSans-Italic;
 }
+/*
+al CaixetaWTexto2 le asigno
+    - cambio la tipografia
+*/
 #CaixetaWTexto2{
     font-family: 'Times New Roman', Times, serif;
 }
+/*
+al textoNegrita le asigno
+    - Color del texto
+    - anchura del texro
+*/
 #textoNegrita{
     color: rgb(2, 4, 45);
     font-weight: bold;
@@ -802,7 +839,7 @@ Al Identi le asigno
     margin-top: 60px;
     margin-left: 8px;
     border-radius: 5px;
-    width: 300px;
+    width: 290px;
     float: right;
     height: 20vh;
     color: white;
@@ -835,8 +872,10 @@ Al IdentiA (img) le asigno
 /*Al IdentiA (p)
     - Flota derecha
     - Anchura especifica
+    - margen interno superior
 */
 #IdentiA p{
+    padding-top: 17px;
     float: right;
     width: 80%;
 }
@@ -875,8 +914,10 @@ Al identiB (p) le asigno
     - Texto alineado al centro
     - Cambio el grosor del text
     - margen interior a la derecha
+    - margen interior arriba
 */
 #IdentiB p{
+    padding-top: 17px;
     float: right;
     width: 80%;
    text-align: center;
