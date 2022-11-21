@@ -3,18 +3,19 @@
     padding: auto;
 }
 body{
-    width: 1000px;
+    width: 1200px;
     background-color: white;
 }
 header{
     background-color: black;
     color: white;
     float: left;
-    width: 1000px;
+    width: 1200px;
 }
 header img{
     width: 100px;
     float: left;
+    border: 2px solid black;
 }
 
 header h1{
@@ -41,32 +42,126 @@ header h1{
     color: blue;
     border-bottom: 1px solid red;
 }
+
+#sectionLogin{
+    width: 1200px;
+    height: 400px;
+    float: left;
+    background-color: beige;
+}
+
+#loginCaja{
+    margin-top: 50px;
+    background-color: aquamarine;
+    width: 400px;
+    margin-left: 400px;
+    height: 250px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+#loginCaja h1{
+    font-size: 40px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+#loginCaja h2{
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.nomContra{
+    margin-left: 17px;
+    margin-top: 10px;
+    width: 90%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#botonLogear{
+    border-top: 2px solid black;
+    font-size: 20px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    float: left;
+}
+#botonLogear:hover{
+    color: black;
+    background-color: grey;
+}
+
 section{
     float: left;
-    width: 700px;
+    width: 900px;
 }
 .PrimerDiv{
-    margin-top: 2px;
-    width: 230px;
+    margin-top: 10px;
+    width: 290px;
     float: left;
+    margin-left: 8px;
 }
 .PrimerDiv img{
-    width: 80px;
-    height: 70px;
+    width: 100%;
+    height: 290px;
     float: left;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 aside{
-    background-color: wheat;
-    float: right;
-    width: 300px;
-    height: 400px;
+    background-color: rgb(179, 127, 32);
+    float: left;
+    width: 300px;  
 }
+
+aside img{
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 10px solid;
+}
+
+
+#comentario1 h1{
+    margin-top: 10px;
+    font-size: 24px;
+    float: left;
+    color: white;
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+#comentario1 h3{
+    margin-top: 10px;
+    font-size: 24px;
+    float: left;
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+#comentario1 img{
+    float: left;
+    color: white;
+    width: 50%;
+}
+#comentario1 p{
+    float: right;
+    color: white;
+    width: 45%;
+}
+
 footer{
     background-color: black;
     color: white;
     float: left;
-    width: 1000px;
+    width: 1200px;
     height: 80px;
 }
 footer h1{
@@ -116,7 +211,19 @@ footer ul li img{
     }
     /*----------------------------------------------*/
     .PrimerDiv{
-        width: 49%;
+        width: 45%;
+    }
+    header{
+        width: 900px;
+    }
+    section{
+        width: 600px;
+    }
+    aside{
+        width: 300px;
+    }
+    footer{
+        width: 900px;
     }
 	section:after{
 		/* realizar cálculos https://developer.mozilla.org/es/docs/Web/CSS/calc() */
