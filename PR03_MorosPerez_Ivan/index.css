@@ -4,7 +4,7 @@
 }
 body{
     width: 1000px;
-    background-color: beige;
+    background-color: white;
 }
 header{
     background-color: black;
@@ -42,46 +42,24 @@ header h1{
     border-bottom: 1px solid red;
 }
 section{
-    background-color: chartreuse;
     float: left;
-    width: 900px;
+    width: 700px;
 }
 .PrimerDiv{
-    width: 295px;
-    border: 1px solid red;
+    margin-top: 2px;
+    width: 230px;
     float: left;
 }
 .PrimerDiv img{
-    width: 150px;
+    width: 80px;
+    height: 70px;
     float: left;
 }
-.PrimerDiv p{
-    padding-top: 4px;
-    font-size: 30px;
-    width: 144px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.CuartoDiv{
-    width: 295px;
-    border: 1px solid blue;
-    float: left;
-}
-.CuartoDiv img{
-    width: 150px;
-    float: right;
-}
-.CuartoDiv p{
-    padding-top: 4px;
-    font-size: 30px;
-    width: 144px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 aside{
     background-color: wheat;
     float: right;
-    width: 100px;
+    width: 300px;
     height: 400px;
 }
 footer{
@@ -140,9 +118,6 @@ footer ul li img{
     .PrimerDiv{
         width: 49%;
     }
-    .CuartoDiv{
-        width: 49%;
-    }
 	section:after{
 		/* realizar cálculos https://developer.mozilla.org/es/docs/Web/CSS/calc() */
 		padding-left: calc(100% / 2 - 3px);
@@ -179,9 +154,6 @@ footer ul li img{
     }
     /*----------------------------------------------*/
     .PrimerDiv{
-        width: 100%;
-    }
-    .CuartoDiv{
         width: 100%;
     }
     
