@@ -125,6 +125,7 @@ h1{
     min-width: 250px;
     margin-top: 10px;
     float: left;
+    height: 300px;
 }
 .CajasAside img{
     width: 100%;
