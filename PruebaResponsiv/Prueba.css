@@ -22,7 +22,7 @@ header{
 
 /*Animacion del logo*/
 .animacionLogo {
-	animation-duration: 5s;
+	animation-duration: 15s;
 	animation-name: animacionLogo;
 	animation-iteration-count: infinite;
   }
