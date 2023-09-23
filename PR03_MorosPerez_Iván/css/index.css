@@ -1,0 +1,358 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Pongo una tipografia por defecto*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Establezco  una cabecera estatica para que se vea en todo momento*/
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+/*Color de fondo blano*/
+section{
+    background-color: white;
+}
+/*Color de fondo blano*/
+aside{
+    background-color: white;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin:6px 0;
+    cursor: pointer;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0.67em;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+/*Cuando pasas el raton por encima de los elementos del menu se inserta un borde inferior*/
+#menu a:hover{
+    border-bottom: 2px solid;
+}
+
+/*------------------------------------------------------*/
+#banner{
+    margin-top: 50px;
+    position: relative;
+}
+/*Asigno a la imagen un gran espacion debido a que es la imagen de portada*/
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+
+#banner h2{
+    font-size: 28px;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+/*Al pasar el ratón por encima cambia el color de fondo ("Es del boton que pone Leer Mas")*/
+#banner a:hover{
+    background: rgb(133, 51, 51);
+}
+/*Aqui pongo una tipografia direfente para que alla un poco mas de dinamismo en la lectura de los 
+    elementos de la paguina, le aumento el tamaño y lo centro*/
+#blog h3,h4{
+    text-align: center;
+    font-size: 120%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+/*Pogno un borde superior e inferios y le pongo la anchura maxima para asi crear dos lineas completas
+    horizontales que dividen la paguina en dos para una mejor diferenciacion de las partes de la paguina.*/
+#blog h3{
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#blog h4{
+    border-top: 2px solid black;
+    
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+#blog article{
+    margin: 15px;
+
+}
+#blog img{
+    width: 100%;
+    height: 90%;
+    flex-basis: 100%;
+}
+/*Pongo una altura automatica para que se adecue en referencia a los elementos que contiene*/
+footer{
+    width: 100%;
+    height: auto;
+    background: #333;
+    position: flex;
+    float: left;
+}
+/*Pongo que flote a la izquierda para que choque con el resto de elementos*/
+#Foot1{
+    float: left;
+    width: 33%;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+}
+#Foot1 ul {
+    margin-top: 1%;
+}
+#Foot1 ul li{
+    margin-left: 8%;
+    text-align: left;
+}
+/*Pongo que flote a la izquierda para que choque con el resto de elementos*/
+#Foot2{
+    border-left: 2px solid white;
+    float: left;
+    width: 33%;
+    height: 100%;
+    color: white;
+}
+/*Ponemos las lista en fila*/
+#Foot2 ul li{
+    display: inline;
+    margin-left: 5%;
+}
+#Foot2 img{
+    height: 10%;
+    width: 10%;
+}
+/*Cuando pasas el ratón por encima de las imagenes cambias el color del fondo*/
+#Foot2 img:hover{
+    background-color: rgb(187, 78, 78);
+    border-radius: 100%;
+}
+#PrimerLi{
+    margin-left: 14%;
+}
+/*Pongo que flote a la izquierda para que choque con el resto de elementos*/
+#Foot3{
+    border-left: 2px solid white;
+    float: left;
+    width: 33%;
+    height: 100%;
+    color: white;
+    font-size: 10px;
+}
+#Foot3 ul {
+    margin-top: 1%;
+}
+#Foot3 ul li{
+    list-style: none;
+    margin-left: 15%;
+}
+/*Quito la decoracion por defecto del enlace para que quede como yo deseo*/
+#Foot3 ul li a{
+    text-decoration: none;
+    color: rgb(59, 158, 158);
+    
+}
+/*Cuando pasas el ratón por encima cambia el color del texto del enlace*/
+#Foot3 ul li a:hover{
+    color: rgb(147, 92, 195);
+}
+
+/*Escritorio
+    -pongo la anchura por defecto que quiero en los aritculos*/
+@media (min-width: 769px) {
+	article{
+        width: 30%;
+    }
+}
+
+
+/*Tablet
+    -hago mas grande los arituclos para que asi cree una fila 
+        de 2 articulo y una columna de 3 filas
+    -Pongo mas pequeño los titulos de los articulos*/
+@media (max-width: 769px) {
+	article{
+        width: 30%;
+    }
+    #blog h4{
+        font-size: 90%;
+    }
+}
+
+/*Movil 
+    -Aqui hago mas pequño el texto del menu principal
+    -hago mas grande los arituclos para que asi cree un fila 
+        de 1 articulo y una columna de 6 filas
+    -Pongo mas pequeño los titulos de los articulos*/
+@media (max-width: 426px) {
+	header{
+        font-size: 7px;
+    }
+    article{
+        width: 50%;
+    }
+    #blog h4{
+        font-size: 60%;
+    }
+}
+
+/*Paguina horarios------------------------------------------------------------*/
+#seccionHorarios{
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: rgb(255, 81, 81);
+}
+table{
+    margin-left: 10%;
+    margin-top: 10%;
+    background-color: grey;
+    border: 2px solid black;
+
+}
+#article1{
+    width: 100%;
+    height: 200px;
+}
+#article2{
+    width: 100%;
+    height: 200px;
+}
+#seccionHorarios h1{
+    margin-left: 10%;
+    margin-top: 1%;
+    color: white;
+    width: 100%;
+
+}
+table tr td{
+    color: white;
+    border: 2px solid black;
+    background-color: #333;
+    text-align: center;
+    border-top-left-radius: 20%;
+}
+table tr td:hover{
+    color: rgb(94, 235, 55);
+}
+.diasDeLaSemana td{
+    background-color: aliceblue;
+    color: black;
+}
+.horas{
+    background-color: rgb(78, 112, 141);
+    color: rgb(255, 255, 255);
+}
+#article1{
+    border-bottom: 2px solid black;
+}
+/*login------------------------------------------------------------*/
+#sectionLogin{
+    width: 100%;
+    height: 450px;
+    float: left;
+    background-color: beige;
+}
+
+#loginCaja{
+    margin-right: 400px;
+    margin-top: 10%;
+    background-color: aquamarine;
+    width: 400px;
+    margin-left: 30%;
+    height: 250px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+#loginCaja h1{
+    font-size: 40px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+#loginCaja h2{
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.nomContra{
+    margin-left: 17px;
+    margin-top: 10px;
+    width: 90%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#botonLogear{
+    border-top: 2px solid black;
+    font-size: 20px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    float: left;
+}
+#botonLogear:hover{
+    color: black;
+    background-color: grey;
+}
+
+
